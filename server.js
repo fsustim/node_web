@@ -50,6 +50,12 @@ app.get('/about', (req, res) => {
     
 });
 
+app.get('/project', (req, res) => {
+    res.render('./partials/project.hbs');
+    
+});
+
+
 // Bad request page
 app.get('/bad', (req, res) => {
     res.send({
