@@ -2,6 +2,8 @@ const express = require('express');
 const fs = require('fs');
 const hbs = require('hbs');
 
+const port = process.env.PORT || 3030;
+
 var app = express();
 
 // In order to use middle wear
@@ -56,7 +58,7 @@ app.get('/bad', (req, res) => {
 });
 
 
-//app.listen(process.env.PORT, process.env.IP, () => {
-app.listen(3030, () => {
-    console.log('server starting....');
+//app.listen(port, process.env.IP, () => {
+app.listen(port, () => {
+    console.log(`server starting.... on ${port}`);
 });
