@@ -51,10 +51,9 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/project', (req, res) => {
-    res.render('./partials/project.hbs');
+    res.render('./partials/project.hbs', {pageTitle: 'Project'});
     
 });
-
 
 // Bad request page
 app.get('/bad', (req, res) => {
